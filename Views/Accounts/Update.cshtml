@@ -1,0 +1,53 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ausaf</title>
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div class="main">
+        <div class="wrap">
+            <div class="content-bot">
+                <div class="inner-top">
+                    <div class="col span_2_of_3">
+                        <div class="contact-form">
+                            <h3>WELCOME TO update page!</h3>
+                            <form method="post" action="~/Accounts/UpdateInfo">
+                                <div>
+                                    @Html.Label("Name of Client")
+                                    @*<span><label>Name of client</label></span>*@
+                                    <span><input name="clientName" type="text" class="textbox"></span>
+                                </div>
+                                <div>                                    @Html.Label("CNIC NUMBER")
+                                    @*<span><label>CNIC Number</label></span>*@
+                                    <span><input name="clientcnic" type="text" class="textbox"></span>
+                                </div>
+
+                                <span><input type="submit" value="Update"></span>
+                        </div>
+                        <br />
+                   
+
+                </form>
+            </div>
+                    </div>
+
+                    </footer>
+                    <div class="footer-bottom">
+                        <div class="wrap">
+                            <div class="copy">
+                                <p>All rights Reserved | Design by: ORION SOFTS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
+
+
+

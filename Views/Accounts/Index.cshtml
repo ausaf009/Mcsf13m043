@@ -1,0 +1,114 @@
+﻿@model hotel_managment_system.Models.Account
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ausaf</title>
+    <link href="~/Content/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div class="main">
+        <div class="wrap">
+            <div class="content-bot">
+                <div class="inner-top">
+                    <div class="col span_2_of_3">
+                        <div class="contact-form">
+                            <h3>WELCOME TO Acounts!</h3>
+                            <form method="post" action="~/Accounts/Save">
+                                <div>
+                                    <span><label>Name of client</label></span>
+                                    @Html.ValidationMessageFor(x=>x.Name)
+                                    <span><input name="clientName" type="text" class="textbox" required /></span>
+                                </div>
+                                <div>
+                                    <span><label>CNIC Number</label></span>
+                                    @Html.ValidationMessageFor(x => x.CNIC_)
+                                    <span><input name="clientcnic" type="text" class="textbox" required /></span>
+                                </div>
+                                <div>
+                                    <span><label>Country</label></span>
+                                    @Html.ValidationMessageFor(x => x.Country)
+                                    <span><input name="clientcountry" type="text" class="textbox" required /></span>
+                                </div>
+                                <div>
+                                    <span><label>City</label></span>
+                                    @Html.ValidationMessageFor(x => x.City)
+                                    <span><input name="clientcity" type="text" class="textbox" required /></span>
+                                </div>
+                                <div>
+                                    <span><label>Booking Time</label></span>
+                                    @Html.ValidationMessageFor(x => x.Booking_Time)
+                                    <span><input name="clientbooktime" type="text" class="textbox" required /></span>
+                                </div>
+                                <div>
+                                    <span><label>Duration(days)</label></span>
+                                    @Html.ValidationMessageFor(x => x.Duration)
+                                    <span><input name="clientdays" type="text" class="textbox" required /></span>
+                                </div>
+                                <div>
+                                    <span><label>E-MAIL of client</label></span>
+                                    @Html.ValidationMessageFor(x => x.Email)
+                                    <span><input name="clientEmail" type="text" class="textbox" required /></span>
+                                </div>
+                                <div>
+                                    <span><label>MOBILE</label></span>
+                                    @Html.ValidationMessageFor(x => x.Mobile_)
+                                    <span><input name="clientPhone" type="text" class="textbox" required /></span>
+                                </div>
+                                <div>
+                                    <span><label>Room Number</label></span>
+                                    @Html.ValidationMessageFor(x => x.Room_)
+                                    <span><input name="clientroomno" type="text" class="textbox" required /></span>
+                                </div>
+                                <div>
+                                    <span><label>Floor Number</label></span>
+                                    @Html.ValidationMessageFor(x => x.Floor_)
+                                    <span><input name="clientfloor" type="text" class="textbox" required /></span>
+                                </div>
+                                <div>
+                                    <span><input type="submit" value="Submit"></span>
+                                </div>
+                                <br />
+                                <br />
+                                <div>
+
+                                    <a href="~/Accounts/Update">Update</a>
+                                </div>
+                                <br />
+                                <br />
+                                <div>
+
+                                    <a href="~/Accounts/Delete">Delete</a>
+                                </div>
+
+                                @*<div>
+                                    <span><input type="submit" value="Modify"></span>
+                                </div>
+                                <br />
+                                <div>
+                                    <span><input type="submit" value="Delete"></span>
+                                </div>*@
+                            </form>
+                        </div>
+                    </div>
+                    
+            </footer>
+            <div class="footer-bottom">
+                <div class="wrap">
+                    <div class="copy">
+                        <p>All rights Reserved | Design by: ORION SOFTS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    
+
+
+
